@@ -1,0 +1,79 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+table {
+  border-spacing: 0;
+}
+
+tr {
+  padding: 0;
+  margin: 0;
+}
+
+td,
+th {
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgba(125, 125, 125, 0.2);
+}
+
+tr {
+  position: "sticky";
+  top: 0;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* z-index: -1; */
+  background: #fcb608;
+  /* border: 1px solid transparent; */
+  /* outline: 0; */
+  /* display: flex; */
+  min-height: 5em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="radio"]:checked {
+  background: #000;
+  /* border-color: green; */
+}
+
+th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: red;
+}
+
+th[scope="row"] {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+
+th[scope="row"] {
+  vertical-align: top;
+  color: inherit;
+  background-color: inherit;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent calc(100% - 0.05em),
+    #d6d6d6 calc(100% - 0.05em),
+    #d6d6d6 100%
+  );
+}
+
+.float-btn {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+}
